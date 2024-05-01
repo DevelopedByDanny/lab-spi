@@ -1,5 +1,6 @@
 package com.lab.consumer;
 
+import com.lab.service.ClassInfo;
 import com.lab.service.EvaluateNumber;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class Main {
 
         for (EvaluateNumber eval : loader) {
             implementations.add(eval);
-            implementationNames.add(eval.getClass().getSimpleName());
+            implementationNames.add(eval.getClass().getAnnotation(ClassInfo.class).name());
         }
 
         if (implementations.isEmpty()) {

@@ -1,7 +1,8 @@
 package com.lab.provider;
 
+import com.lab.service.ClassInfo;
 import com.lab.service.EvaluateNumber;
-
+@ClassInfo(name = "FizzBuzz evaluator")
 public class FizzBuzz implements EvaluateNumber {
     @Override
     public String evaluate(int number) {

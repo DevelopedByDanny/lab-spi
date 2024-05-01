@@ -1,9 +1,10 @@
 package com.lab.provider;
 
 
+import com.lab.service.ClassInfo;
 import com.lab.service.EvaluateNumber;
-
-public class EvenNumber implements EvaluateNumber {
+@ClassInfo(name = "EvenNumber evaluator")
+public class Even implements EvaluateNumber {
     @Override
     public String evaluate(int number) {
         if (number % 2 == 0) {
