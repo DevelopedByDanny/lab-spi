@@ -5,6 +5,7 @@ import com.lab.service.EvaluateNumber;
 public class FizzBuzz implements EvaluateNumber {
     @Override
     public String evaluate(int number) {
+        System.out.println("In FizzBuzz class, evaluate method is called with the number " + number);
         if (number % 3 == 0 && number % 5 == 0) {
             return "FizzBuzz";
         } else if (number % 3 == 0) {
